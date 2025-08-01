@@ -374,6 +374,19 @@
       margin-top: 2rem;
     }
 
+    /* Hide honeypot field */
+    .hidden {
+      position: absolute !important;
+      left: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+      clip: rect(1px, 1px, 1px, 1px) !important;
+      -webkit-clip-path: inset(50%) !important;
+      clip-path: inset(50%) !important;
+      white-space: nowrap !important;
+    }
+
     /* Tablet Styles */
     @media (min-width: 768px) {
       .hero {
