@@ -835,14 +835,17 @@
         </div>
       </div>
       
-      <div class="footer-bottom">
-        <p>&copy; 2024 Abroad for Impact. All rights reserved.</p>
-        <p>Purpose Travel BV 20025</p>
-      </div>
+             <div class="footer-bottom">
+         <p>&copy; <span id="current-year"></span> Abroad for Impact. All rights reserved.</p>
+         <p>Purpose Travel BV</p>
+       </div>
     </div>
   </footer>
 
   <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
